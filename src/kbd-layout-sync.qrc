@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+    <file>../kbd-layout-sync.svg</file>
+    <file>../kbd-layout-sync-mask.svg</file>
+</qresource>
+</RCC>

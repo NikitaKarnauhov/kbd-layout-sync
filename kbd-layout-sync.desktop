@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Keyboard Layout Sync
+Name[ru]=Синхронизация раскладки
+Comment=Keyboard layout sync
+Comment[ru]=Синхронизация раскладки клавиатуры
+Exec=kbd-layout-sync
+Icon=kbd-layout-sync
+Terminal=false
+Type=Application
+Categories=Utility;Network;
+

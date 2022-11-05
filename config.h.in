@@ -1,0 +1,4 @@
+#pragma once
+
+#cmakedefine01 HAS_X11
+#cmakedefine01 ICON_IS_MASK
