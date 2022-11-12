@@ -24,7 +24,7 @@ if (HAS_X11)
         sender.h)
 endif()
 
-add_executable(${EXECUTABLE} ${SOURCES})
+add_executable(${EXECUTABLE} MACOSX_BUNDLE ${SOURCES})
 
 # target_compile_options(${EXECUTABLE} PRIVATE "-fsanitize=address")
 # target_link_libraries(${EXECUTABLE} PRIVATE asan)

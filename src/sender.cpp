@@ -5,6 +5,7 @@
 
 #include <X11/XKBlib.h>
 #include <X11/Xutil.h>
+#include <arpa/inet.h>
 #include <errno.h>
 #include <netdb.h>
 #include <poll.h>
@@ -70,7 +71,7 @@ void Sender::run()
     struct sockaddr_in name;
 
     name.sin_family = AF_INET;
-    name.sin_port = ::htons(std::strtoul(port_.c_str(), nullptr, 10));
+    name.sin_port = htons(std::strtoul(port_.c_str(), nullptr, 10));
     name.sin_addr = *(struct in_addr *)host->h_addr;
 
     if (::connect(fd, (struct sockaddr *)&name, sizeof(name)) < 0)
