@@ -34,7 +34,7 @@ Settings load_settings()
     qsettings.endArray();
 
     result.xkbswitchlib_path =
-        qsettings.value("xkbswitchlib_path", "/usr/loca/lib/libxkbswitch.so").toString().toStdString();
+        qsettings.value("xkbswitchlib_path", "/usr/local/lib/libxkbswitch.so").toString().toStdString();
 
     return result;
 }
